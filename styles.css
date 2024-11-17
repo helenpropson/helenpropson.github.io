@@ -1,0 +1,307 @@
+/*** GENERAL ***/
+
+:root {
+  --container-width-desktop: 730px;
+  --container-width-mobile: 100vw;
+  --font-size-body-mobile: 20px;
+  --link-count: 6;
+  --link-offset-desktop: calc(var(--link-width-desktop) * 1.8);
+  --link-offset-mobile: calc(var(--link-width-mobile) * 1.5);
+  --link-width-desktop: 40px;
+  --link-width-mobile: 8vw;
+  --links-height-mobile: var(--link-width-mobile);
+  --links-width-mobile: calc((var(--link-count) - 1) * var(--link-offset-mobile) + var(--link-width-mobile));
+}
+
+a {
+  color: rgba(0, 80, 255, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(0, 80, 255, 1);
+  text-decoration: underline;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 5vw;
+  position: relative;
+}
+
+ul {
+  padding-inline-start: 8vw;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p {
+  font-size: 5vw;
+  margin-block-start: 0;
+  margin-block-end: 0.35em;
+}
+
+/*** CLASSES ***/
+
+.link {
+  position: absolute;
+  width: var(--link-width-mobile);
+}
+
+.project-description {
+  font-size: 5vw;
+}
+
+.section {
+  left: 0;
+  width: 84vw;
+}
+
+.section-header {
+  font-size: 8vw; 
+  left: 2vw;
+  position: relative;
+}
+
+/*** ELEMENTS ***/
+
+#container {
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+#cv-svg {
+  width: 7vw;
+}
+
+#name-header {
+  font-size: 8vw;
+  left: 0;
+  position: relative;
+  text-align: center;
+  top: 2vw;
+  width: 100vw;
+}
+
+#intro {
+  left: 2vw;
+  font-size: 5vw;
+  position: relative;
+  top: 7vw;
+  width: 96vw;
+}
+
+#links {
+  display: inline-block;       
+  height: var(--links-height-mobile);
+  left: calc((var(--container-width-mobile) - var(--links-width-mobile)) / 2);
+  position: relative;
+  top: 5vw;
+  width: var(--links-width-mobile);
+}
+
+#link0 {
+  left: 0;
+}
+
+#link1 {
+  left: var(--link-offset-mobile);
+}
+
+#link2 {
+  left: calc(2 * var(--link-offset-mobile));
+}
+
+#link3 {
+  left: calc(3 * var(--link-offset-mobile));
+}
+
+#link4 {
+  left: calc(4 * var(--link-offset-mobile));
+}
+
+#link5 {
+  left: calc(5 * var(--link-offset-mobile));
+}
+
+#presentations-header {
+  top: 12vw;
+}
+
+#presentations {
+  position: relative;
+  top: 12vw;
+}
+
+#profile {
+  left: 37.5vw;
+  position: relative;
+  top: 4vw;         
+  width: 25vw;
+}
+
+#projects-header {
+  top: 12vw;
+}
+
+#projects {
+  position: relative;
+  top: 12vw;
+}
+
+#publications-header {
+  top: 12vw;
+}
+
+#publications {
+  position: relative;
+  top: 12vw;
+  left: 2vw;
+}
+
+/*** MOBILE ***/
+
+@media (min-device-width: 800px) and (min-width: 800px) {
+
+  li {
+    font-size: var(--font-size-body-mobile);
+  }
+
+  ul {
+    padding-inline-start: 40px;
+  }
+
+  p {
+    font-size: var(--font-size-body-mobile);
+  }
+
+  .link {
+    top: 0;
+    width: var(--link-width-desktop);
+  }
+
+  .project-description {  
+    font-size: var(--font-size-body-mobile);
+  }
+
+  .section-header {
+    font-size: 30px;
+  }
+
+  .section {
+    width: auto;
+  }
+
+  #cv-svg {
+    width: 35px;
+  }
+
+  #container {
+    left: calc((100vw - var(--container-width-desktop)) / 2);
+    top: 20px;
+    width: var(--container-width-desktop);
+    height: 1150px;
+  }
+  
+  #intro {
+    font-size: var(--font-size-body-mobile);
+    left: 0;
+    position: absolute;
+    top: 70px;
+    width: 480px;
+  }
+
+  #links {
+    left: 0;
+    position: absolute;
+    top: 265px;
+    width: var(--container-width-desktop);
+  }
+
+  #link0 {
+    left: 0;
+  }
+
+  #link1 {
+    left: var(--link-offset-desktop);
+  }
+
+  #link2 {
+    left: calc(2 * var(--link-offset-desktop));
+  }
+
+  #link3 {
+    left: calc(3 * var(--link-offset-desktop));
+  }
+
+  #link4 {
+    left: calc(4 * var(--link-offset-desktop));
+  }
+
+  #link5 {
+    left: calc(5 * var(--link-offset-desktop));
+  }
+
+  #name-header {
+    font-size: 36px;
+    left: 0;
+    position: absolute;
+    text-align: unset;
+    top: 0;
+    width: unset;
+  }
+
+  #presentations-header {
+    left: unset;
+    position: absolute;
+    top: 570px;
+  }
+
+  #presentations {
+    left: unset;
+    position: absolute;
+    top: 600px;
+  }
+
+  #profile {
+    left: unset;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 200px;
+  }
+
+  #projects-header {
+    left: unset;
+    position: absolute;
+    top: 770px;
+  }
+
+  #projects {
+    left: unset;
+    position: absolute;
+    top: 800px;
+    width: 525px;
+  }
+
+  #publications-header {
+    left: unset;
+    position: absolute;
+    top: 355px;
+  }
+
+  #publications {
+    left: 0;
+    position: absolute;
+    top: 400px;
+  }
+
+}
