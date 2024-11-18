@@ -232,7 +232,7 @@ p {
   #links {
     left: 0;
     position: absolute;
-    top: 265px;
+    top: 320px;
     width: var(--container-width-desktop);
   }
 
@@ -286,7 +286,7 @@ p {
     position: absolute;
     right: 0;
     top: 70px;
-    width: 200px;
+    width: 250px;
   }
 
   #projects-header {
@@ -305,25 +305,25 @@ p {
   #publications-header {
     left: unset;
     position: absolute;
-    top: 355px;
+    top: 400px;
   }
 
   #publications {
     left: 0;
     position: absolute;
-    top: 400px;
+    top: 445px;
   }
 
   #teaching-header {
     left: unset;
     position: absolute;
-    top: 660px;
+    top: 720px;
   }
 
   #teaching {
     left: 0;
     position: absolute;
-    top: 705px;
+    top: 765px;
   }
 
 }
