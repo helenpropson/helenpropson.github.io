@@ -167,6 +167,16 @@ p {
   left: 2vw;
 }
 
+#teaching-header {
+  top: 20vw;
+}
+
+#teaching {
+  position: relative;
+  top: 20vw;
+  left: 2vw;
+}
+
 /*** MOBILE ***/
 
 @media (min-device-width: 800px) and (min-width: 800px) {
@@ -302,6 +312,18 @@ p {
     left: 0;
     position: absolute;
     top: 400px;
+  }
+
+  #teaching-header {
+    left: unset;
+    position: absolute;
+    top: 500px;
+  }
+
+  #teaching {
+    left: 0;
+    position: absolute;
+    top: 545px;
   }
 
 }
