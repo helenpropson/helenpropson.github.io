@@ -168,12 +168,12 @@ p {
 }
 
 #teaching-header {
-  top: 20vw;
+  top: 12vw;
 }
 
 #teaching {
   position: relative;
-  top: 20vw;
+  top: 12vw;
   left: 2vw;
 }
 
@@ -317,13 +317,13 @@ p {
   #teaching-header {
     left: unset;
     position: absolute;
-    top: 500px;
+    top: 660px;
   }
 
   #teaching {
     left: 0;
     position: absolute;
-    top: 545px;
+    top: 705px;
   }
 
 }
