@@ -218,7 +218,8 @@ p {
     left: calc((100vw - var(--container-width-desktop)) / 2);
     top: 20px;
     width: var(--container-width-desktop);
-    height: 1150px;
+    padding-top: 440px;
+    padding-bottom: 40px;
   }
   
   #intro {
@@ -232,7 +233,7 @@ p {
   #links {
     left: 0;
     position: absolute;
-    top: 320px;
+    top: 380px;
     width: var(--container-width-desktop);
   }
 
@@ -304,26 +305,27 @@ p {
 
   #publications-header {
     left: unset;
-    position: absolute;
-    top: 400px;
+    position: relative;
+    top: unset;
   }
 
   #publications {
     left: 0;
-    position: absolute;
-    top: 445px;
+    position: relative;
+    top: unset;
+    margin-bottom: 20px;
   }
 
   #teaching-header {
     left: unset;
-    position: absolute;
-    top: 720px;
+    position: relative;
+    top: unset;
   }
 
   #teaching {
     left: 0;
-    position: absolute;
-    top: 765px;
+    position: relative;
+    top: unset;
   }
 
 }
