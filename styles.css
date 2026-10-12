@@ -4,7 +4,7 @@
   --container-width-desktop: 770px;
   --container-width-mobile: 100vw;
   --font-size-body-mobile: 20px;
-  --link-count: 6;
+  --link-count: 4;
   --link-offset-desktop: calc(var(--link-width-desktop) * 1.8);
   --link-offset-mobile: calc(var(--link-width-mobile) * 1.5);
   --link-width-desktop: 40px;
